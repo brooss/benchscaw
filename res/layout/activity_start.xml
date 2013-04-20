@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/starttext"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/FFMPEGButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@android:drawable/ic_menu_slideshow"
+            android:text="@string/startFFMPEG" />
+
+        <Button
+            android:id="@+id/mediaCodecButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@android:drawable/ic_menu_slideshow"
+            android:text="@string/startMediaCodec" />
+
+        <Button
+            android:id="@+id/libvpxEncodeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@android:drawable/ic_menu_slideshow"
+            android:text="@string/startLibvpxEncode" />
+        
+        <Button
+            android:id="@+id/noTestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@android:drawable/ic_menu_info_details"
+            android:text="@string/noTest" />
+        
+		<Button
+		    android:id="@+id/donateButton"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:drawableLeft="@drawable/ic_menu_star"
+		    android:text="@string/donate" />
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="12dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="a1515cea05d4fd5"
+            ads:loadAdOnCreate="true"
+            ads:testDevices="TEST_EMULATOR, 95FEECDFA309A37419EF8467ADA04831"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+</ScrollView>
